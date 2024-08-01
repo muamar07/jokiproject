@@ -1,0 +1,419 @@
+@import 'ui-kit/styles';
+
+.Table {
+  $this: &;
+  height: 100%;
+  max-width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+
+  &-Function {
+    background: #f3f6fc;
+    padding: 12px 16px;
+    border: 1px solid #c3d3f3;
+    border-radius: 8px;
+  }
+
+  &-TD,
+  &-TH {
+    width: 1%;
+    /* But "collapsed" cells should be as small as possible */
+    &.collapse {
+      width: 0.1%;
+      // min-width: 80px;
+      display: table-cell;
+    }
+  }
+
+  &-TD {
+    padding: 8px;
+    border-bottom: 1px solid #d5d5d5;
+    @media (min-width: 1024px) {
+      padding: 10px;
+    }
+    @media (min-width: 1300px) {
+      padding: 12px;
+    }
+    @media (min-width: 1536px) {
+      padding: 16px;
+    }
+  }
+
+  &-TH {
+    padding: 16px 8px;
+    text-align: start;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    @media (min-width: 1024px) {
+      padding: 20px 10px;
+    }
+    @media (min-width: 1300px) {
+      padding: 24px 12px;
+    }
+    @media (min-width: 1536px) {
+      padding: 32px 16px;
+    }
+
+    &Inner {
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    &Text {
+      display: inline-block;
+    }
+  }
+
+  &-THead {
+    @include Ubuntu-12-bold;
+  }
+
+  &-TBody {
+    @include Ubuntu-12-regular;
+    & #{$this}-TR {
+      background-color: white;
+      transition: background-color 0.15s;
+      border-bottom: 1px solid black;
+
+      &:hover {
+        background-color: gray;
+      }
+    }
+  }
+
+  .no-data {
+    @include Ubuntu-12-regular;
+    color: #b5b5b5;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-THFoot {
+    border-top: 1px solid $color-grey-disabled;
+    border-bottom: none;
+    padding: 20px 23px;
+    text-align: start;
+
+    &Inner {
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    &Text {
+      display: inline-block;
+    }
+  }
+
+  &-SortingIcon {
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+.label-text {
+  text-align: left;
+  margin-right: 10px;
+  font-size: 12px !important;
+}
+
+.concise-dropdown {
+  background-color: white;
+  border: 1px solid #d5d5d5;
+  border-radius: 8px;
+  padding: 10px;
+  color: #353535;
+  cursor: pointer;
+  @include Ubuntu-12-regular;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 0 2px rgba($color-primary, 0.2);
+    border: 1px solid #4a7cdc;
+  }
+
+  .menu {
+    border: 1px solid #d5d5d5;
+  }
+}
+
+.Table-no-data {
+  $this: &;
+  height: 100%;
+  max-width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  display: flex;
+  flex-direction: column;
+
+  &-Function {
+    background: #f3f6fc;
+    padding: 12px 16px;
+    border: 1px solid #c3d3f3;
+    border-radius: 8px;
+  }
+
+  &-TD,
+  &-TH {
+    width: 1%;
+    /* But "collapsed" cells should be as small as possible */
+    &.collapse {
+      width: 0.0000000001%;
+      // min-width: 80px;
+      display: table-cell;
+    }
+  }
+
+  &-TD {
+    padding: 8px;
+    border-bottom: 1px solid #d5d5d5;
+    @media (min-width: 1024px) {
+      padding: 10px;
+    }
+    @media (min-width: 1300px) {
+      padding: 12px;
+    }
+    @media (min-width: 1536px) {
+      padding: 16px;
+    }
+  }
+
+  &-TH {
+    padding: 16px 8px;
+    text-align: start;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    @media (min-width: 1024px) {
+      padding: 20px 10px;
+    }
+    @media (min-width: 1300px) {
+      padding: 24px 12px;
+    }
+    @media (min-width: 1536px) {
+      padding: 32px 16px;
+    }
+
+    &Inner {
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    &Text {
+      display: inline-block;
+    }
+  }
+
+  &-THead {
+    @include Ubuntu-12-bold;
+  }
+
+  &-TBody {
+    @include Ubuntu-12-regular;
+    & #{$this}-TR {
+      background-color: transparent;
+      transition: background-color 0.15s;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  .no-data {
+    @include Ubuntu-12-regular;
+    color: #b5b5b5;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-THFoot {
+    border-bottom: none;
+    padding: 20px 23px;
+    text-align: start;
+
+    &Inner {
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    &Text {
+      display: inline-block;
+    }
+  }
+
+  &-SortingIcon {
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+.label-text {
+  text-align: left;
+  margin-right: 10px;
+  font-size: 12px !important;
+}
+
+.concise-dropdown {
+  background-color: white;
+  border: 1px solid #d5d5d5;
+  border-radius: 8px;
+  padding: 10px;
+  color: #353535;
+  cursor: pointer;
+  @include Ubuntu-12-regular;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 0 2px rgba($color-primary, 0.2);
+    border: 1px solid #4a7cdc;
+  }
+
+  .menu {
+    border: 1px solid #d5d5d5;
+  }
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  height: 20px;
+  width: 38px;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  height: 20px;
+  width: 38px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 12px;
+  width: 12px;
+  left: 3px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #4a7cdc;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #4a7cdc;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 20px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.dropdown {
+  &-header {
+    border-bottom: 1px solid #d5d5d5;
+  }
+  &-headerText {
+    @include Ubuntu-14-regular;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+.show-button {
+  font-size: 12px;
+}
+
+.btn-showall {
+  font-size: 12px;
+  padding: 0px;
+}
+
+.page-dropdown {
+  border: 1px solid #d5d5d5;
+  padding: 12px;
+  border-radius: 8px;
+  color: #353535;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.show-label {
+  @include Ubuntu-12-regular;
+}
+
+.dragDrops {
+  margin-top: 24px;
+  left: 0px;
+  right: 0px;
+}
+
+.tableRow_disabled {
+  background-color: $color-grey-background !important;
+}
+
+.scroll-display {
+  display: block;
+  overflow: overlay;
+  overflow-x: hidden;
+  max-height: 54vh;
+  &-thead {
+    position: sticky;
+    top: 0px;
+    margin: 0 0 0 0;
+    background: #fff;
+    border-radius: 8px;
+    z-index: 1;
+  }
+
+  &-tfoot {
+    position: sticky;
+    bottom: 0px;
+    margin: 0 0 0 0;
+    background: #fff;
+    border-radius: 8px;
+    z-index: 1;
+  }
+}
+
+.table-border {
+  border: 1px solid #d5d5d5;
+  border-radius: 8px;
+}

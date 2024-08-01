@@ -1,0 +1,80 @@
+@import 'ui-kit/styles';
+
+.FormField {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  $this: &;
+  &-InputWrapper {
+    position: relative;
+  }
+  
+  &-Label {
+    @include Ubuntu-14-bold;
+    color: white;
+    margin-left: 5px;
+  }
+  
+  &-Input {
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.05) !important;
+    padding-right: 30px;
+  }
+
+  &-Icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    svg path {
+      fill: $color-grey-placeholder;
+      transition: all 0.3s;
+    }
+  }
+}
+
+.ErrorMessage {
+  @include Ubuntu-12-regular;
+  color: $color-danger;
+}
+
+.react-select {
+  $this: &;
+  &__control {
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.05) !important;
+    @include Ubuntu-12-regular;
+    border-radius: 8px !important;
+    min-height: 42px !important;
+    border: 1px solid $color-grey-outline !important;
+    cursor: pointer !important;
+    &--is-disabled {
+      background-color: $color-grey-disabled !important;
+      cursor: not-allowed !important;
+    }
+    &--menu-is-open,
+    &--is-focused {
+      border: 1px solid $color-primary !important;
+      box-shadow: 0 0 0 2px rgba($color-primary, 0.2) !important;
+    }
+  }
+  &__menu {
+    @include Ubuntu-12-regular;
+    border-radius: 8px !important;
+  }
+  &__single-value {
+    color: black !important;
+  }
+  &__placeholder {
+    color: $color-grey-placeholder !important;
+  }
+}
+
+.inputBtn{
+  color: white;
+}
+
+// react-select__single-value react-select__single-value--is-disabled

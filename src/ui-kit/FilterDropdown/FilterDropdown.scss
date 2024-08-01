@@ -1,0 +1,112 @@
+@import 'ui-kit/styles';
+
+.drops {
+  width: 240px;
+  margin-top: 24px;
+  left: 0px;
+  right: 0px;
+  overflow: overlay;
+  border: 1px solid #d5d5d5;
+  max-height: 100vh;
+  border-radius: 8px;
+}
+
+.drops::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 8px;
+}
+
+/* Track */
+.drops::-webkit-scrollbar-track {
+  border-radius: 8px;
+}
+
+/* Handle */
+.drops::-webkit-scrollbar-thumb {
+  background: $color-blue-primary;
+  border-radius: 8px;
+}
+
+.collapse-title {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.header-filter {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d5d5d5;
+  align-items: center;
+}
+
+.header-title {
+  @include Ubuntu-14-regular;
+}
+
+.header-subtitle {
+  @include Ubuntu-12-regular;
+}
+
+.content-filter {
+  border-top: 1px solid $color-grey-outline;
+}
+
+.content-container {
+  padding-bottom: 0px !important;
+}
+
+.content-checkbox {
+  background-color: $color-grey-background;
+  display: flex;
+  padding: 12px 16px 12px 16px;
+  gap: 12px;
+  flex-direction: column;
+}
+
+#section {
+  border-bottom: 1px solid $color-grey-outline;
+}
+
+#section:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.date-content {
+  background-color: $color-grey-background;
+  display: flex;
+  padding: 12px 16px 12px 16px;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.date-header {
+  @include Ubuntu-14-regular;
+}
+
+.date-picker {
+  @include Ubuntu-12-regular;
+  color: $color-grey-placeholder;
+  border-color: $color-grey-outline;
+}
+
+.label-container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  @include Ubuntu-12-regular;
+}
+
+.dropdown {
+  position: relative;
+
+  &:not(:focus-within) .dropdown-content {
+    display: none;
+  }
+
+  .dropdown-content {
+    &:focus-within {
+      display: block;
+    }
+  }
+}

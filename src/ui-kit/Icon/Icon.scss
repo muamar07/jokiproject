@@ -1,0 +1,32 @@
+@import "ui-kit/styles";
+
+.Icon {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+
+  svg {
+    display: inline-flex;
+    width: 100%;
+    height: max-content;
+  }
+
+  &-IconSize {
+    &__small {
+      width: 12px;
+      height: 12px;
+    }
+    &__medium {
+      width: 24px;
+      height: 24px;
+    }
+    &__large {
+      width: 36px;
+      height: 36px;
+    }
+    &__largest {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}

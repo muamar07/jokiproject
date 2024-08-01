@@ -1,0 +1,58 @@
+@import 'ui-kit/styles';
+
+.assetShape {
+  border-radius: 0%;
+
+  &-type {
+    &__Big {
+      width: 3%;
+    }
+    &__Small {
+      width: 2%;
+    }
+  }
+}
+
+.titleText {
+  color: $color-yellow;
+
+  &-Date {
+    @include Ubuntu-18-bold;
+    color: $color-yellow;
+  }
+
+  &-type {
+    &__Big {
+      @include Ubuntu-64-bold;
+    }
+    &__Small {
+      @include Ubuntu-36-bold;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  /* Misalnya, ubah properti-properti pada lebar layar tertentu */
+  .assetShape-type__Big {
+    width: 5%; /* Ubah lebar Big pada layar kecil */
+    height: auto;
+  }
+
+  .assetShape-type__Small {
+    width: 3%; /* Ubah lebar Small pada layar kecil */
+    height: auto;
+  }
+
+  /* Misalnya, ubah font-size pada lebar layar tertentu */
+  .titleText-type__Big {
+    font-size: 30px; /* Ubah font-size Big pada layar kecil */
+  }
+
+  .titleText-type__Small {
+    font-size: 24px; /* Ubah font-size Small pada layar kecil */
+  }
+
+  .titleText-Date {
+    font-size: 16px;
+  }
+}

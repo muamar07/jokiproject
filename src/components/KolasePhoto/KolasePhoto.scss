@@ -1,0 +1,51 @@
+
+  .container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 30px 100px 30px;
+  }
+  
+  .box{
+    max-width: fit-content;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 10px;
+   box-sizing: border-box;
+
+   &:hover{
+    background:#f5e8d6 ;
+   }
+  }
+  
+  .imageKolase{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 0px;
+    object-fit: cover;
+  }
+
+  .col1 a img{
+    height: 100%;
+  }
+
+  .col2-1{
+    padding-bottom: 10px;
+  }
+
+  .col3 a img{
+    height: 100%;
+  }
+
+  .col2-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  

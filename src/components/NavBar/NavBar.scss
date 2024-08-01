@@ -1,0 +1,70 @@
+/* NavBar.scss */
+@import 'ui-kit/styles';
+
+.master-container {
+  // background-color: white;
+  color: white;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in; //, opacity 0.3s ease-in
+  margin-top: 10px;
+  // opacity: 0;
+}
+
+.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Vertically center items */
+  // nanti kasih transisi
+}
+
+.navbar-start {
+  display: flex;
+  align-items: center; /* Vertically center items within navbar-start */
+  margin-left: 5%;
+}
+
+// .menu-horizontal {
+//   display: flex;
+//   margin-left: auto; /* Push the ul to the right */
+// }
+
+.navbar-container-right {
+  margin-right: 5%;
+}
+
+.navbar-container-left {
+  width: 35px;
+  border-radius: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  fill: white !important;
+}
+
+// .navbar-container::before {
+//   opacity : 0;
+// }
+
+// .navbar-container::after {
+//   opacity : 1;
+// }
+
+.scrolled {
+  // background-color: /* Your desired background color when scrolled */;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  z-index: 100; /* Adjust the z-index as needed */
+  color: black;
+  background-color: #ffce00;
+  transition: background-color 0.3s ease-out, color 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.navbar-button-text {
+  @include Ubuntu-18-bold;
+  text-transform: uppercase;
+}
+
+.dropdown-text {
+  color: black;
+}

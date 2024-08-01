@@ -1,0 +1,36 @@
+@import 'ui-kit/styles';
+
+.adminBg{
+    background-color: #1D1D1D;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    height: 97.4vh;
+}
+
+.logoAdmin{
+    width: 8%;
+    border-radius: 50%;
+}
+
+.adminBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-text{
+        color: $color-yellow;
+        &-span{
+            @include Ubuntu-48-bold;
+        }
+    }
+}
+
+.lulus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

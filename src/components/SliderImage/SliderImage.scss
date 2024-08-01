@@ -1,0 +1,78 @@
+.slider {
+    position: relative;
+    padding: 20px 30px 10px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  button{
+    opacity: 0.1;
+  }
+
+  button:hover{
+    opacity: 0.5;
+  }
+
+  // .button{
+  //   padding-top: 10px;
+  //   border: none;
+  //   outline: none;
+  //   cursor: pointer;
+  //   font-size: 10px;
+  //   color: #000;
+  // }
+  
+  .right-arrow {
+    width: 40px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    right: 1px;
+    z-index: 10;
+    // cursor: pointer;
+    // user-select: none;
+  }
+  
+  .left-arrow {
+    width: 40px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    left: 1px;
+    z-index: 10;
+    // cursor: pointer;
+    // user-select: none;
+  }
+  
+  .slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    /* transform: scale(1.08); */
+  }
+
+  .dots {
+    position: absolute;
+    bottom: 25px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 10;
+  }

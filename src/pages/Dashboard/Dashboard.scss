@@ -1,0 +1,112 @@
+@import 'ui-kit/styles';
+
+.dashboardMain{
+    background-color: $color-pink;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: flex-end;
+}
+
+.dashboardContainer{
+    // max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.imgSuccess{
+    width: 250px;
+    height: 250px;
+    animation: kelapKelip 2s infinite;
+    // margin-bottom: 70px
+}
+
+.dashboardText{
+    width: 100%;
+    text-align: center;
+    @include Ubuntu-38-bold;
+    margin-bottom: 70px;
+    text-wrap: wrap;
+}
+
+.dashboardBtnNext{
+    @include Ubuntu-38-bold;
+    width: 100%;
+    height: 85px;
+    border-radius: 50px;
+    background-color: $color-purple;
+
+    &:hover{
+        background-color: $color-purple-hover;
+    }
+
+    &:active{
+        background-color: $color-purple-pressed;
+    }
+}
+
+.dashboardDummy{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    background-color: $color-danger;
+    border-radius: 50px;
+    position: absolute; /* Gunakan posisi absolut untuk memposisikan tombol */
+    top: 10px; /* Jarak dari atas */
+    right: 0px; /* Jarak dari kanan */
+
+    &:hover{
+        background-color: $color-danger-hovered;
+    }
+    &:active{
+        background-color: $color-danger-pressed;
+    }
+
+}
+
+.dashboardSmile{
+    position: absolute;
+    width: 164px;
+    height: 164px;
+    top: 0px; /* Jarak dari atas */
+    left: 0px; /* Jarak dari kanan */
+}
+.dashboardFlower{
+    position: absolute;
+    width: 164px;
+    height: 164px;
+    bottom: 0px; /* Jarak dari atas */
+    left: 0px; /* Jarak dari kanan */
+}
+
+.dashboardDummyBottom{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    background-color: $color-danger-pressed;
+    border-radius: 50px;
+    position: absolute; /* Gunakan posisi absolut untuk memposisikan tombol */
+    bottom: 10px; /* Jarak dari atas */
+    right: 0px; /* Jarak dari kanan */
+
+    &:hover{
+        background-color: $color-danger-focused;
+    }
+    &:active{
+        background-color: $color-danger-pressed;
+    }
+
+}
+
+@keyframes kelapKelip {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}

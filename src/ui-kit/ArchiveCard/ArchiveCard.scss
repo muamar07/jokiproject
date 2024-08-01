@@ -1,0 +1,71 @@
+@import 'ui-kit/styles';
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    // gap: 10px;
+    margin: 0 auto;
+}
+
+.card{
+    flex: 0 0 calc(33.3333% - 4px); /* Set to 3 cards per row with 20px gap */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.detailContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+        transform: scale(1.0); // Mengubah ukuran kartu saat dihover
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); // Menambah bayangan kartu
+        z-index: 2; // Mengangkat kartu ke atas
+        cursor: pointer;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4); /* Warna hitam dengan tingkat transparansi 0.5 */
+        z-index: 1; /* Pastikan elemen overlay tumpang tindih dengan gambar */
+
+        &:hover{
+            background: rgba(0, 0, 0, 0.8);
+        }
+    }
+    iframe{
+        background-color: transparent;
+    }  
+    
+    &-detail{
+        opacity: 0;
+        transition: 1s ease-in-out ;
+        @include Ubuntu-14-bold;
+    }
+
+    &:hover .detailContainer-detail{
+        opacity: 1;
+    } 
+    
+.textContainer {
+    position: relative;
+    text-transform: uppercase;
+    position: absolute;
+    @include Ubuntu-30-bold;
+    color: white;
+    z-index: 2;
+
+}
+}

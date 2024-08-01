@@ -1,0 +1,83 @@
+@import "ui-kit/styles";
+
+.container2
+{
+    // justify-content: flex-end;
+    // align-items: flex-end;
+    // text-align: left;
+    margin-top: 55px;
+    // margin-left: 200px;
+    width: 100%;
+}
+
+.UMNinfo
+{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 2px;
+
+}
+
+.UIlist
+{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+
+    &:hover{
+        color: $color-yellow
+    }
+}
+
+.container3
+{
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 55px;
+    width: 100%;
+}
+
+.OURinfo
+{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 2px;
+
+}
+
+.OIlist
+{
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+@media (max-width: 720px)
+{
+    .container2
+{
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.OURinfo, .UMNinfo
+{
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.UIlist, .OIlist
+{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    left: 35%;
+}
+}

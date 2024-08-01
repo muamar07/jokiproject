@@ -1,0 +1,74 @@
+@import "ui-kit/styles";
+
+.Pagination {
+  $this: &;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+  outline: transparent;
+  gap: 20px;
+
+  & > li {
+    margin: 2px;
+    width: 30px;
+    height: 30px;
+  }
+
+  & > li > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    color: $color-text;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: transparent;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: $color-blue-primary-surface;
+    }
+  }
+
+  .arrowRight{
+    svg path{
+      fill: $color-text !important;
+    }
+}
+
+  .arrowBack{
+    svg path {
+      fill: $color-text !important;
+    }
+  }
+
+  & > #{$this}__active > a {
+    background-color: $color-blue-primary;
+    border-color: $color-blue-primary;
+    color: $color-blue-primary;
+  }
+
+  & > #{$this}__active > a,
+  & > #{$this}__active > a:hover,
+  & > #{$this}__active > a:focus {
+    background-color: $color-blue-primary-surface;
+    border-color: $color-blue-primary-surface;
+    outline: transparent;
+    cursor: default;
+  }
+
+  & > .disabled > a {
+    cursor: default;
+
+    svg path{
+      fill: $color-grey-disabled !important;
+    }
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}

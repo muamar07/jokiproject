@@ -1,0 +1,23 @@
+@import 'ui-kit/styles';
+.react-select__group {
+  $this: &;
+  padding: 0px !important;
+}
+
+.headingText {
+  padding: 12px 12px;
+  color: black !important;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  font-style: normal;
+  line-height: 18px;
+}
+
+.react-select-text-elip {
+  white-space: nowrap;
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+}

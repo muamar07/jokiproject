@@ -1,0 +1,129 @@
+@import 'ui-kit/styles';
+
+.background {
+  display: flex;
+  flex-direction: column;
+  background-color: #1d1d1d;
+  border-top: 50px solid #ffce00;
+  border-bottom: 50px solid #ffce00;
+  height: 100vh;
+  justify-content: center;
+  padding: 0 80px;
+}
+
+.container {
+  width: 100%;
+}
+
+.thankyou {
+  display: flex;
+  flex-direction: column;
+  color: #ffce00;
+  @include Ubuntu-108-superbold;
+}
+
+.desc {
+  color: white;
+  @include Ubuntu-38-regular;
+}
+
+.bawahan {
+  display: flex;
+  justify-content: space-between;
+  // width: 1700px;
+}
+
+.regards img {
+  width: 134px;
+}
+
+.regards {
+  display: flex;
+  padding-top: 50px;
+  color: white;
+  padding-right: 50px;
+}
+
+.best-regards {
+  display: flex;
+  @include Ubuntu-36-regular;
+  padding-left: 30px;
+  align-items: center;
+}
+
+// .access-code {
+//   color: white;
+//   @include Ubuntu-54-regular;
+//   display: flex;
+//   justify-content: flex-end;
+//   align-items: center;
+//   margin-left: auto;
+// }
+
+// .rand {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   color: #ffce00;
+//   @include Ubuntu-144-superbold;
+// }
+
+@media (max-width: 768px) {
+  .thankyou {
+    display: flex;
+    flex-direction: column;
+    color: #ffce00;
+    @include Ubuntu-36-SuperBold;
+  }
+
+  .desc {
+    color: white;
+    @include Ubuntu-20-regular;
+  }
+
+  .regards img {
+    width: 75px;
+    height: auto;
+  }
+  .best-regards {
+    @include Ubuntu-18-regular;
+  }
+
+  .background {
+  
+    padding: 0 50px;
+  }
+}
+
+// @media (max-width: 768px) {
+//   /* Misalnya, ubah properti-properti pada lebar layar tertentu */
+//   .assetShape-type__Big {
+//     width: 5%; /* Ubah lebar Big pada layar kecil */
+//   }
+
+//   .assetShape-type__Small {
+//     width: 3%; /* Ubah lebar Small pada layar kecil */
+//   }
+
+//   /* Misalnya, ubah font-size pada lebar layar tertentu */
+//   .titleText-type__Big {
+//     font-size: 24px; /* Ubah font-size Big pada layar kecil */
+//   }
+
+//   .titleText-type__Small {
+//     font-size: 16px; /* Ubah font-size Small pada layar kecil */
+//   }
+// }
+
+.imageLast{
+  animation: putar 5s linear infinite;
+}
+
+@keyframes putar {
+  from {
+    transform: rotate(0deg); /* Mulai dari rotasi 0 derajat */
+  }
+  to {
+    transform: rotate(360deg); /* Rotasi hingga 360 derajat */
+  }
+}

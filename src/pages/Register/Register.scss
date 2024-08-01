@@ -1,0 +1,146 @@
+@import 'ui-kit/styles';
+
+.regCover {
+  background-color: #1d1d1d;
+  // height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  padding: 50px 0px 30px 120px;
+  position: relative;
+}
+
+
+.yellow-line {
+  display: flex;
+  flex-direction: row;
+}
+
+.black-bg {
+  background-color: #1d1d1d;
+  width: 100%;
+}
+
+.shapeYellow {
+  width: 450px;
+  height: 10px;
+  background-color: $color-yellow;
+  border: 2px solid $color-yellow;
+  left: 0;
+  position: absolute;
+  top: 400px;
+}
+
+.shapeYellow2 {
+  width: 450px;
+  height: 10px;
+  background-color: $color-yellow;
+  border: 2px solid $color-yellow;
+  left: 0;
+  position: absolute;
+  top: 925px;
+}
+
+.shapeYellow3 {
+  width: 1400px;
+  height: 10px;
+  background-color: $color-yellow;
+  border: 2px solid $color-yellow;
+}
+
+.fourdot-boxes {
+  width: 350px;
+  border-radius: 0 !important;
+  position: absolute;
+  left: 0;
+  top: 600px;
+}
+
+.fourdot-boxes img {
+  border-radius: 0 !important;
+}
+
+.btnNext {
+  background-color: $color-yellow !important;
+  border-radius: 10% !important;
+  margin-top: 0%;
+  color: #1d1d1d;
+  font-weight: 700;
+}
+
+// .titleContainer{
+//     padding: 50px 0px 30px 120px;
+// }
+
+/* Misalnya, ubah properti .shapeYellow dan .shapeYellow2 pada lebar layar tertentu */
+@media (max-width: 768px) {
+  .shapeYellow2 {
+    top: 750px;
+    width:350px;
+  }
+  .shapeYellow {
+    top: 180px;
+    width:350px;
+  }
+
+  .shapeYellow3{
+    // width: 650px;
+    // left:0;
+  }
+
+  .black-bg{
+    width: 45%;
+  }
+
+  .regCover {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 40px 0px 30px 30px;
+    position: relative;
+  }
+
+  .REQ {
+    margin-left: 15%;
+    position: relative;
+  }
+  .fourdot-boxes {
+    top: 35%;
+  }
+
+  .KECIL {
+    padding-left: 30px;
+  }
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: white;
+
+  input[type='checkbox'] {
+    margin-right: 10px;
+    transform: scale(1.2); /* Adjust the scale as needed for checkbox size */
+
+    @media(max-width: 1024px){
+      width: 100px;
+    }
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+.btnSubmit{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include Ubuntu-14-bold;
+}

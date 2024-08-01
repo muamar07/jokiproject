@@ -1,0 +1,104 @@
+@import 'ui-kit/styles';
+
+.img-container {
+  position: relative;
+  display: inline-block;
+}
+
+.img-container img {
+  display: block;
+}
+
+.textSpan {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+//   width: 100%;
+  box-sizing: border-box;
+  padding: 20px
+}
+
+.textTitle{
+    @include Ubuntu-64-bold;
+    color: white;
+     width: 100%;
+    &-yellow{
+        color: $color-yellow;
+    }
+}
+
+.reviewsWrapper{
+  background-color: $color-red;
+}
+.reviewsText{
+  color: white;
+}
+
+.boxItem {
+  height: 200px;
+  max-height: 200px;
+  background-color: #f5f5f5;
+  color: $color-text;
+}
+
+.boxText {
+  padding: 20px;
+  word-wrap: break-word;
+  overflow: auto;
+  @include Ubuntu-16-regular;
+
+  @media(max-width: 1280px){
+    @include Ubuntu-12-regular;
+  }
+
+  @media(max-width: 768px){
+    @include Ubuntu-14-regular;
+  }
+}
+
+.circleBox {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #f5f5f5;
+  margin-left: 85px;
+}
+
+.textDetail{
+    @include Ubuntu-20-bold;
+}
+
+.eventText{
+    @include Ubuntu-16-bold;
+}
+.swiper-gap {
+    .swiper-slide {
+      // margin-right: 10px;
+  
+      @media (max-width: 1024px) {
+        margin-right: 0px;
+      }
+    }
+    .swiper-container {
+      width: 480px;
+    }
+  
+    @media screen and (min-width: 300px) {
+      .swiper-container {
+        width: 300px;
+      }
+    }
+  
+    @media screen and (min-width: 768px) {
+      .swiper-container {
+        width: 768px;
+      }
+    }
+  
+    @media screen and (min-width: 1024px) {
+      .swiper-container {
+        width: 1024px;
+      }
+    }
+  }

@@ -1,0 +1,116 @@
+@import 'ui-kit/styles';
+
+.mainBasic{
+    background-color: $color-pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    @media(min-width: 1024px){
+        height: 100vh;
+    }
+}
+
+.mainContainer{
+    background-color: $color-cream;
+    width: 80%;
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+
+    @media(max-width:1024px){
+       width: 90%;
+    }
+}
+
+.mainTitle{
+    @include Ubuntu-54-bold;
+}
+
+.mainForm{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+
+    @media(max-width:1024px){
+        flex-direction: column;
+        gap: 50px;
+
+    }
+}
+
+.formColumn{
+    width: 500px !important;
+    @media(max-width:1024px){
+        width: 100% !important;
+
+    }
+}
+
+.btnSure{
+    @include Ubuntu-12-regular;
+    width: 45%;
+    border-radius: 30px;
+    background-color: $color-blue-primary;
+
+    &:hover{
+        background-color: $color-blue-primary-hover;
+    }
+    &:active{
+        background-color: $color-blue-primary-outline;
+    }
+}
+
+.footerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    // width: 30%;
+}
+
+.footerBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+
+.mainFooter{
+    @include Ubuntu-14-bold;
+}
+
+.btnAuthor{
+    width: 40%;
+    height: 30%;
+}
+
+.btnAuthor{
+    background-color: $color-success;
+    border-radius: 20px;
+    width: 100%;
+
+    &:hover{
+        background-color: $color-success-hovered !important;
+    }
+    &:active{
+        background-color: $color-success-pressed !important;
+    }
+}
+
+.btnSave{
+    background-color: $color-success !important;
+    width: 100%;
+    border-radius: 50px;
+
+    &:hover{
+        background-color: $color-success-hovered !important;
+    }
+    &:active{
+        background-color: $color-success-pressed !important;
+    }
+}

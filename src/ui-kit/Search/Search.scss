@@ -1,0 +1,76 @@
+@import "ui-kit/styles";
+
+$height: 44px;
+$maxWidth: 620px;
+
+.Search {
+  $this: &;
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: $maxWidth;
+  // width: 100%;
+  background-color: white;
+  border-radius: 10px;
+
+  &#{$this}__active {
+    #{$this}-Input {
+      background-color: transparent;
+    }
+  }
+
+  &__active {
+    #{$this}-InputWrapper {
+      border: 1px solid $color-blue-primary;
+      box-shadow: 0 4px 8px rgba(176, 151, 106, 0.25);
+    }
+
+    #{$this}-Input {
+      background-color: white;
+    }
+  }
+
+  &-Form {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+
+  &-InputWrapper {
+    padding: 0;
+    width: 100%;
+    height: $height;
+    background-color: transparent;
+    border: 1px solid rgba(224, 224, 224, 1);
+    transition: all 0.15s;
+    border-radius: 10px;
+  }
+
+  &-Input {
+    @include Ubuntu-12-regular;
+    margin: 0;
+    padding: 0 50px 0 40px;
+    width: 100%;
+    height: $height;
+    color: $color-text;
+    background-color: transparent;
+    border: none;
+    outline: transparent;
+
+    &::placeholder {
+      color: $color-grey-placeholder;
+    }
+  }
+
+  &-Icon {
+    position: absolute;
+    margin-left: 15px;
+    width: 16px;
+    height: 16px;
+
+    svg path {
+      fill: $color-grey-placeholder !important;
+    }
+  }
+}

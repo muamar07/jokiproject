@@ -1,0 +1,108 @@
+@import 'ui-kit/styles';
+
+.dropdown {
+  $this: &;
+  &#{$this}__normal {
+    border: 1px solid #d5d5d5;
+    &:focus {
+      box-shadow: 0 0 0 2px rgba($color-primary, 0.2);
+      border: 1px solid #4a7cdc;
+    }
+    cursor: pointer;
+  }
+  &#{$this}__danger {
+    border: 1px solid #d5d5d5;
+    &:focus {
+      box-shadow: 0 0 0 2px rgba($color-danger-focused, 0.2);
+      border: 1px solid #ff4343;
+    }
+    cursor: pointer;
+  }
+  &#{$this}__yellow {
+    border: 1px solid #d5d5d5;
+    &:focus {
+      box-shadow: 0 0 0 2px rgba($color-yellow, 0.2);
+      border: 1px solid $color-yellow;
+      background-color: $color-yellow;
+    }
+    cursor: pointer;
+  }
+  &#{$this}__disabled {
+    border: 1px solid #d5d5d5;
+    pointer-events: none;
+    background-color: #e5e5e5;
+    color: #B5B5B5;
+  }
+}
+
+.drop-li {
+  border-bottom: 1px solid;
+}
+
+.drop-li:last-child {
+  border: none;
+}
+
+.dropdown-parent-text {
+  font-size: 12px;
+  line-height: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.childDropdown {
+  &:hover {
+    svg path {
+      fill: white;
+      transition: all 0.3s;
+    }
+    color: white;
+    background-color: $color-primary !important;
+  }
+  border-radius: 8px;
+  background-color: white;
+  $this: &;
+  &#{$this}__normal {
+    border: 1px solid #d5d5d5;
+    &:focus {
+      box-shadow: 0 0 0 2px rgba($color-primary, 0.2);
+      border: 1px solid #4a7cdc;
+    }
+    cursor: pointer;
+  }
+  &#{$this}__danger {
+    border: 1px solid #d5d5d5;
+    &:focus {
+      box-shadow: 0 0 0 2px rgba($color-danger-focused, 0.2);
+      border: 1px solid #ff4343;
+    }
+    cursor: pointer;
+  }
+  &#{$this}__disabled {
+    border: 1px solid #d5d5d5;
+    pointer-events: none;
+    background-color: #e5e5e5;
+    color: #B5B5B5;
+  }
+}
+
+.drops {
+  width: 240px;
+  margin-top: 24px;
+  left: 0px;
+  right: 0px;
+  overflow: overlay;
+  border: 1px solid #d5d5d5;
+  max-height: 100vh;
+  border-radius: 8px;
+}
+
+// .dropdown-content{
+//   border: 1px solid red !important;
+// }
+
+// .dropdownLabel{
+//   margin-left: 10px 12px !important;
+//   border: 1px solid blue !important;
+// }

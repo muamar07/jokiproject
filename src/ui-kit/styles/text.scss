@@ -1,0 +1,374 @@
+$base-font-family: 'Ubuntu', sans-serif;
+
+/* Ubuntu/10/Regular */
+@mixin Ubuntu-10-regular {
+  font-family: $base-font-family;
+  font-size: 10px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.25;
+}
+/* Ubuntu/12/Regular */
+@mixin Ubuntu-12-regular {
+  font-family: $base-font-family;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.25;
+}
+/* Ubuntu/12/Bold */
+@mixin Ubuntu-12-bold {
+  font-family: $base-font-family;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.25;
+}
+/* Ubuntu/13/Small */
+@mixin Ubuntu-13-small {
+  font-family: $base-font-family;
+  font-size: 13px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.5em;
+}
+
+/* Ubuntu/14/Small */
+@mixin Ubuntu-14-small {
+  font-family: $base-font-family;
+  font-size: 14px;
+  font-weight: 100;
+  font-style: normal;
+  line-height: 24px;
+}
+
+/* Ubuntu/14/Regular */
+@mixin Ubuntu-14-regular {
+  font-family: $base-font-family;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+/* Ubuntu/14/Bold */
+@mixin Ubuntu-14-bold {
+  font-family: $base-font-family;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+/* Ubuntu/15/Bold */
+@mixin Ubuntu-15-bold {
+  font-family: $base-font-family;
+  font-size: 15px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+/* Ubuntu/16/Regular */
+@mixin Ubuntu-16-regular {
+  font-family: $base-font-family;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+/* Ubuntu/16/Bold */
+@mixin Ubuntu-16-bold {
+  font-family: $base-font-family;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+/* Ubuntu/16/Bold */
+@mixin Ubuntu-16-superbold {
+  font-family: $base-font-family;
+  font-size: 16px;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+/* Ubuntu/18/regular */
+@mixin Ubuntu-18-regular {
+  font-family: $base-font-family;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+/* Ubuntu/18/Bold */
+@mixin Ubuntu-18-bold {
+  font-family: $base-font-family;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+/* Ubuntu/20/Bold */
+@mixin Ubuntu-20-regular {
+  font-family: $base-font-family;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+/* Ubuntu/20/Bold */
+@mixin Ubuntu-20-bold {
+  font-family: $base-font-family;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+/* Ubuntu/28/Medium */
+@mixin Ubuntu-28-medium {
+  font-family: $base-font-family;
+  font-size: 28px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.25;
+}
+/* Ubuntu/28/Bold */
+@mixin Ubuntu-28-bold {
+  font-family: $base-font-family;
+  font-size: 28px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.25;
+}
+/* Ubuntu/28/Superbold */
+@mixin Ubuntu-28-superbold {
+  font-family: $base-font-family;
+  font-size: 28px;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+/* Ubuntu/24/Regular */
+@mixin Ubuntu-24-regular {
+  font-family: $base-font-family;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+/* Ubuntu/24/Bold */
+@mixin Ubuntu-24-bold {
+  font-family: $base-font-family;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+@mixin Ubuntu-24-Superbold {
+  font-family: $base-font-family;
+  font-size: 24px;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+@mixin Ubuntu-30-regular {
+  font-family: $base-font-family;
+  font-size: 30px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+/* Ubuntu/30/Bold */
+@mixin Ubuntu-30-bold {
+  font-family: $base-font-family;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+@mixin Ubuntu-36-regular {
+  font-family: $base-font-family;
+  font-size: 36px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+/* Ubuntu/36/Bold */
+@mixin Ubuntu-36-bold {
+  font-family: $base-font-family;
+  font-size: 36px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+/* Ubuntu/36/SuperBold */
+@mixin Ubuntu-36-SuperBold {
+  font-family: $base-font-family;
+  font-size: 36px;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+@mixin Ubuntu-38-regular {
+  font-family: $base-font-family;
+  font-size: 38px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+/* Ubuntu/38/Bold */
+@mixin Ubuntu-38-bold {
+  font-family: $base-font-family;
+  font-size: 38px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+/* Ubuntu/42/Bold */
+@mixin Ubuntu-42-bold {
+  font-family: $base-font-family;
+  font-size: 42px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+@mixin Ubuntu-42-superbold {
+  font-family: $base-font-family;
+  font-size: 42px;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+@mixin Ubuntu-48-regular {
+  font-family: $base-font-family;
+  font-size: 48px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+/* Ubuntu/48/Bold */
+@mixin Ubuntu-48-bold {
+  font-family: $base-font-family;
+  font-size: 48px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+/* Ubuntu/48/Bold */
+@mixin Ubuntu-48-superbold {
+  font-family: $base-font-family;
+  font-size: 48px;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+@mixin Ubuntu-54-regular {
+  font-family: $base-font-family;
+  font-size: 54px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+/* Ubuntu/54/Bold */
+@mixin Ubuntu-54-bold {
+  font-family: $base-font-family;
+  font-size: 54px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+@mixin Ubuntu-54-superbold {
+  font-family: $base-font-family;
+  font-size: 54px;
+  font-weight: bolder;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+/* Ubuntu/64/Bold */
+@mixin Ubuntu-64-bold {
+  font-family: $base-font-family;
+  font-size: 64px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+@mixin Ubuntu-64-superbold {
+  font-family: $base-font-family;
+  font-size: 64px;
+  font-weight: bolder;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+/* Ubuntu/68/Bold */
+@mixin Ubuntu-68-bold {
+  font-family: $base-font-family;
+  font-size: 68px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+/* Ubuntu/108/Bold */
+@mixin Ubuntu-108-bold {
+  font-family: $base-font-family;
+  font-size: 108px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+/* Ubuntu/108/SuperBold */
+@mixin Ubuntu-108-superbold {
+  font-family: $base-font-family;
+  font-size: 108px;
+  font-weight: bolder;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+/* Ubuntu/108/Bold/Italic */
+@mixin Ubuntu-108-bold-italic {
+  font-family: $base-font-family;
+  font-size: 108px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.25;
+}
+
+/* Ubuntu/108/SuperBold */
+@mixin Ubuntu-144-superbold {
+  font-family: $base-font-family;
+  font-size: 144px;
+  font-weight: bolder;
+  font-style: normal;
+  line-height: 1.25;
+}

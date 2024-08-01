@@ -1,0 +1,88 @@
+@import 'ui-kit/styles';
+
+.textDesc {
+  color: black;
+  @include Ubuntu-24-regular;
+  line-height: 1.9;
+}
+.modalAddHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 3px solid $color-dark-gray;
+  svg path {
+    fill: $color-text !important;
+    cursor: pointer;
+  }
+
+  &-text {
+    @include Ubuntu-20-bold;
+    color: $color-text;
+    line-height: 30px;
+  }
+}
+
+.modalAddBody {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  &-upload {
+    display: flex;
+    flex-direction: column;
+    border: 2px dashed $color-blue-primary-outline;
+    background-color: $color-blue-primary-surface;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    svg path {
+      fill: $color-blue-primary !important;
+    }
+
+    &-text {
+      color: $color-blue-primary;
+      @include Ubuntu-14-bold;
+
+      &-plain {
+        color: $color-blue-primary-hover;
+        @include Ubuntu-14-small;
+      }
+
+      &-upload {
+        @include Ubuntu-12-regular;
+        color: $color-grey-placeholder;
+      }
+
+      &-error {
+        margin-top: 5px;
+        @include Ubuntu-12-regular;
+        color: $color-yellow;
+      }
+    }
+
+    &.dragging {
+      border: 2px dashed #ccc;
+      background-color: #f9f9f9;
+    }
+  }
+}
+
+.modalAddBody-upload.disabled {
+  border: 2px dashed $color-grey-outline;
+  background-color: $color-grey-disabled;
+  cursor: default;
+  svg path {
+    fill: white !important;
+  }
+}
+
+.modalAddBody-upload.disabled .modalAddBody-upload-text,
+.modalAddBody-upload.disabled .modalAddBody-upload-text-plain,
+.modalAddBody-upload.disabled .modalAddBody-upload-text-upload {
+  color: white;
+}

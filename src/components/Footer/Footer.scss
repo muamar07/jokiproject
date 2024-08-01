@@ -1,0 +1,99 @@
+@import 'ui-kit/styles';
+
+.MainContainer {
+    background-color: #1D1D1D;
+    color: white;
+    padding: 50px;
+    display: flex;
+  }
+
+.container1
+{
+    margin: 50px;
+    // margin-left: 70px;
+}
+
+// img 
+// {
+//     width: 12%;
+//     height: 12%;
+//     border-radius: 50px;
+// }
+
+.titleUMNDOC
+{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 2px;
+    margin-top: 10px;
+}
+
+.titleUMN
+{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 2px;
+}
+
+.descCont1
+{
+    font-size: 13px;
+    // width: 30vw;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.lastContainer
+{
+    @include Ubuntu-20-bold;
+    background-color: #252525;
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+p
+{
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+}
+@media (max-width: 720px) {
+    .MainContainer {
+        background-color: #1D1D1D;
+        color: white;
+        top: 20%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        display: block;
+    }
+
+    .container1 {
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .titleUMNDOC, .titleUMN, .descCont1 {
+        font-size: 16px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+    .logoUMNDOC
+    {
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 10%;
+        left: 42%;
+        width: 150%;
+        height: 150%;
+    }
+}

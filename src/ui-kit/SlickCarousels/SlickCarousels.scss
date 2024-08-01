@@ -1,0 +1,43 @@
+@import "ui-kit/styles";
+
+/* Define styles for the container of the slider */
+.slick {
+    position: relative;
+  }
+  
+  /* Define styles for the individual slides */
+  .slick-slide {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Define styles for the dots/navigation */
+  .slick-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .slick-dots li {
+    margin: 0 5px;
+  }
+  
+  .slick-dots li button {
+    width: 10px;
+    height: 10px;
+    border: none;
+    background-color: #888;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .slick-dots li.slick-active button {
+    background-color: #333;
+  }
+  
+  /* Define any additional styles you need for your slider */

@@ -1,0 +1,90 @@
+@import 'ui-kit/styles';
+// .NavBar {
+// }
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+
+  video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.logoHeadline {
+  position: absolute;
+  margin-top: 54px;
+  border-radius: 0px;
+  @media (max-width: 1024px) {
+    width: 20%;
+  }
+  width: 50px;
+  opacity: 0.2;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  opacity: 70%;
+  background: black;
+}
+
+.textHeadline {
+  @include Ubuntu-64-bold;
+  stroke: black;
+  color: white;
+
+  &-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &-first {
+      @include Ubuntu-54-bold;
+
+      @media (max-width: 1024px) {
+        @include Ubuntu-36-bold;
+      }
+      @media (max-width: 767px) {
+        @include Ubuntu-24-bold;
+      }
+    }
+
+    &-second {
+      color: $color-yellow;
+
+      @media (max-width: 1024px) {
+        @include Ubuntu-42-bold;
+      }
+      @media (max-width: 767px) {
+        @include Ubuntu-30-bold;
+      }
+    }
+
+    &-third {
+      color: white;
+
+      @media (max-width: 1024px) {
+        @include Ubuntu-36-bold;
+      }
+      @media (max-width: 767px) {
+        @include Ubuntu-24-bold;
+      }
+    }
+  }
+}
